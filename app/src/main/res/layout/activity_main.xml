@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    tools:context=".MainAct">
+
+    <FrameLayout a:id="@+id/container"
+        a:layout_height="match_parent"
+        a:layout_width="match_parent"
+        a:background="@android:color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

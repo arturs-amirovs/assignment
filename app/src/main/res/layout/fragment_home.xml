@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.list.HomeFrg">
+
+    <data class="HomeFrgBinding">
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.f3test.ui.home.HomeViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAnim1"
+            android:visibility="gone"
+            android:src="@drawable/oval"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgAnim2"
+            android:src="@drawable/oval"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:visibility="@{viewModel.loading ? View.VISIBLE : View.GONE}"
+            />
+
+        <Button
+            android:id="@+id/change_album_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Change photo"
+            android:layout_margin="50dp"/>
+    </RelativeLayout>
+
+
+</layout>

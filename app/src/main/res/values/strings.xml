@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">F3Test</string>
+    <string name="facebook_app_id">1342070252825916</string> <string name="fb_login_protocol_scheme">fb1342070252825916</string>
+</resources>
